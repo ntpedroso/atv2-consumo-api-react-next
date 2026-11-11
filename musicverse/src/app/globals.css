@@ -3,5 +3,6 @@
 @theme {
   --color-roxo: #8870FF;
   --color-roxo-claro: #D6CEFB;
+  --color-amarelo: #E2F07B;
   --font-sans: var(--font-poppins);
 }

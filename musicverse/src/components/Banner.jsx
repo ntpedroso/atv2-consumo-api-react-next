@@ -1,24 +1,35 @@
-import React from "react";
+import Image from "next/image";
 import { Play } from "lucide-react";
 
-//assets
 import Bruno from "@/assets/bruno.png";
 
 const Banner = () => {
-    return (
-        <div className="flex bg-roxo rounded-xl">
-            <div className="p-8">
-                <h1>Bruno Mars</h1>
-                <button className="flex bg-roxo-claro rounded-full p-2">
-                    <Play size={18} className="text-gray-800"></Play>
-                </button>
-            </div>
+  return (
+      <div className="grid grid-cols-2 bg-roxo rounded-xl overflow-hidden min-h-64 hover:scale-102 transition-transform duration-300">
+        <div className="flex flex-col justify-end p-8 gap-5">
+          <div className="text-white">
+            <h1 className="text-4xl font-bold">Bruno Mars</h1>
 
-            <div className="h-full ">
-                <img src={Bruno.src || Bruno}></img>
-            </div>
+            <p className="text-sm mt-2">Ouça os maiores sucessos do momento.</p>
+          </div>
+
+          <button
+            type="button"
+            aria-label="Reproduzir Bruno Mars"
+            className="flex items-center justify-center self-start bg-amarelo rounded-full p-3 hover:bg-amarelo/80 transition-colors cursor-pointer"
+          >
+            <Play size={20} className="text-roxo" fill="currentColor" />
+          </button>
         </div>
-    )
-}
+        <div className="flex items-end justify-end">
+          <Image
+            src={Bruno}
+            alt="Bruno Mars"
+            className="w-auto h-64 object-contain object-bottom"
+          />
+        </div>
+      </div>
+  );
+};
 
 export default Banner;

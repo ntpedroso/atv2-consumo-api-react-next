@@ -1,4 +1,6 @@
+
 import { Poppins } from "next/font/google";
+import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -16,8 +18,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className={poppins.variable}>
-        {children}
+      <body className={`${poppins.variable} font-sans`}>
+        <div className="min-h-screen bg-background text-text-primary">
+          <Sidebar />
+
+          <main className="min-w-0 min-h-screen lg:ml-64">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );

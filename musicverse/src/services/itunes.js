@@ -18,4 +18,18 @@ const ListarMusicas = async (termo) => {
     return resposta.data.results;
 }
 
+export const listarAlbuns = async (termo) => {
+    const resposta = await api.get("/search", {
+        params: {
+            term: termo,
+            media: "music",
+            entity: "album",
+            country: "BR",
+            limit: 15
+        }
+    });
+
+    return resposta.data.results;
+};
+
 export default ListarMusicas;

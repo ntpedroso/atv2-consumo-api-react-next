@@ -43,7 +43,7 @@ const Sidebar = () => {
                     w-64 h-screen overflow-y-auto
                     transition-transform duration-300
                     ${menuAberto ? "translate-x-0" : "-translate-x-full"}
-                    lg:translate-x-0
+                    lg:translate-x-0 scrollbar-none
                 `}
             >
                 <div className="flex items-center gap-4 px-6">

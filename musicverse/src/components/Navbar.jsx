@@ -5,7 +5,7 @@ import { Search, Bell } from "lucide-react";
 
 const Navbar = () => {
     return (
-        <header className="flex flex-col lg:flex-row lg:items-center justify-between gap-5 bg-black w-full px-4 sm:px-6 lg:px-8 pt-20 pb-4 lg:py-4 border-b border-roxo text-white">
+        <header className="flex flex-col lg:flex-row lg:items-center justify-between gap-5 bg-black w-full px-4 sm:px-6 lg:px-8 pt-20 pb-4 lg:py-4 text-white">
 
             {/* Saudação */}
             <div>

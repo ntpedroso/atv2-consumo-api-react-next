@@ -67,19 +67,17 @@ const Sidebar = () => {
                         <ItemSidebar
                             icon={Heart}
                             title="Favoritos"
-                            href="/favoritos"
                         />
 
                         <ItemSidebar
                             icon={Music2}
                             title="Playlists"
-                            href="/playlists"
                         />
 
                         <ItemSidebar
                             icon={User}
                             title="Artistas"
-                            href="/artistas"
+                            href="/artista"
                         />
                     </ul>
                 </nav>

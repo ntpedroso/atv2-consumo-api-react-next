@@ -4,7 +4,7 @@ const FiltroGenero = ({genero}) => {
 
     return (
         <>
-            <button className="px-6 py-2 border-1 border-roxo text-white text-sm rounded-full">
+            <button className="px-6 py-2 border-1 border-roxo text-white text-sm rounded-full hover:bg-roxo/25">
                 {genero}
             </button>
         </>
